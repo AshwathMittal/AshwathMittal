@@ -1,4 +1,4 @@
-@charset "UTF-8";::selection{background:#e67e22}.socio{color:#000;padding:14px 25px;text-align:center;text-decoration:none;display:inline-block;border:#000;border-style:solid}.socio:hover{transform:translateY(-15%);transition:.5s ease-in-out;box-shadow:14px 25px #888}@keyframes upp{0%{transform:translateY(0)}}
+@charset "UTF-8";::selection{background:#e67e22}.socio{color:#000;padding:14px 25px;margin-right:10px;margin-top:10px;text-align:center;text-decoration:none;display:inline-block;border:#000;border-style:solid}.socio:hover{transform:translateY(-15%);transition:.5s ease-in-out;box-shadow:14px 25px #888}@keyframes upp{0%{transform:translateY(0)}}
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
