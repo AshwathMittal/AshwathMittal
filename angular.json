@@ -20,13 +20,20 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/boy.png",
+              "src/discord.png",
+              "src/gmail.png",
+              "src/github.png",
               "src/assets"
             ],
             "styles": [
               "src/styles.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
+              "./node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {

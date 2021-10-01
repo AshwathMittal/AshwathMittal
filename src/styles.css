@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+
+::-moz-selection { /* Code for Firefox */
+    background: #F7A307;
+    
+
+  }
+  
+  ::selection {
+      background: #E67E22;
+  }
+
+  .socio{
+      color: black;
+      /* background-color: #f44336; */
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border: black;
+      border-style: solid;
+    }
+
+.socio:hover {
+    /* background-color: yellow; */
+    /* animation: upp 1s; */
+    transform: translateY(-15%);
+
+    transition: 0.5s ease-in-out;
+    box-shadow: 14px 25px  #888888;
+    
+  }
+  @keyframes upp {
+      from{
+        transform: translateY(0%);
+      }
+      to{
+      }
+  }

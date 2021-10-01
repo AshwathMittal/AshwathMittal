@@ -1,19 +1,47 @@
 <div class="container ">
+    
     <br>
     <p style="font-size: 70px;">Hi!</p>
 
     <br>
+    <div class="row">
+        <div class="col-8">
     <p  style="font-size: 35px;" >About Me</p>
-    <div class="container-fluid "> <div class="col-8"> 
-        My Name Is <u>Ashwath Mittal</u>. I am a 10th Grade Student with keen
-         Interest in Computer Science and Robotics. My Journey Began with Robotics when I was in class 6. 
+    <div class="container-fluid ">  
+        My Name Is <u class="invert">Ashwath Mittal</u>. I am a 10th Grade Student with keen
+         Interest in <a href="#">Computer Science</a> and <a href="#">Robotics</a>. My Journey Began with Robotics when I was in class 6. 
          I have Learned <a href="#">Arduino</a> and <br><a href="#">Raspberry Pi</a> Based Robotics.
         Then in 2020 when Lockdown Started, Everything started happening online, while other kids were busy watching netflix all day  
-        I introduced myself to Programming, first i started with <a href="##">Web Development</a>.
-         After that I tried to get started with Ethical Hacking, but it was something I could not do at that time but this helped me get fair experience with Python and Linux.
-         going forward in my journey I learned Raspberry Pi (successfully :D ). <br>
-         Now currently I am Learning Python and have decided to learn Data Science.
+        I introduced myself to Programming, first i started with <a href="#">Web Development</a>.
+         After that I tried to get started with <a href="#">Ethical Hacking</a>, but it was something I
+          could not do at that time but this helped me get fair experience with <a href="#">Python</a> and 
+          <a href="">Linux</a>.
+         going forward in my journey I learned Raspberry Pi. <br>
+         Now currently I am Learning Python and have decided to go in the feild of <a href="">Data Science</a>.
 
-    </div></div>
+    </div>
+</div>
+    <div class="container col-4"><p style="font-size: 35px;">Social Links</p>
+        <p> <a href="https://discord.gg/cxzDCqDwwM" class="socio"> <img src="discord.png" height ="32" width = "32" alt="Discord"> Discord</a></p>
+        <p><a href="https://github.com/AshwathMittal/" class="socio"> <img src="github.png" height ="32" width = "32" alt="GitHub"> GitHub</a></p>
+        <p><a href="mailto:ashwathmittal@gmail.com" class="socio"> <img src="gmail.png" height ="32" width = "32" alt="E-Mail"> E-Mail</a></p>
+        
+    </div>
+
+</div>
+    <br><br><br>
+
+  
+        <p
+          style="font-size: 35px;" >
+        My Skills
+    </p>
+    <div class="container-fluid">
+        <ol class="list-group list-group-numbered">
+            <li *ngFor="let skill of skills" class="list-group-item"><u style="font-size: 30px;">{{skill.name}}</u> <br><b>Experience:</b> {{skill.experience}}<br><b [ngClass]="{'invisible': !skill.itof }">Frameworks / Languages / Tool I use:</b> {{skill.tools}} </li>
+          </ol>
+        </div>
+
+    <br><br><br>
 </div>
 
