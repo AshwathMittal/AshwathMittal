@@ -6,35 +6,58 @@
   }
   
   ::selection {
-      background: #E67E22;
+      background: #df791f;
+}
+.project{
+  text-decoration: none;
+}
+.project h1{
+  color: black;
+}
+.project p{
+  color: #444;
+}
+  .socio{
+    color: black;
+    /* background-color: #f44336; */
+    padding: 14px 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: black;
+    border-style: solid;
+  }  
+  .pr{
+    color: black;
+    padding: 14px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    border: black;
+    border-style: solid;
   }
 
-  .socio{
-      color: black;
-      /* background-color: #f44336; */
-      padding: 14px 25px;
-      margin-right: 10px;
-      margin-top: 10px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      border: black;
-      border-style: solid;
-    }
-
 .socio:hover {
+  transition: 0.5s ease-in-out;
+
     /* background-color: yellow; */
     /* animation: upp 1s; */
     transform: translateY(-15%);
 
-    transition: 0.5s ease-in-out;
     box-shadow: 14px 25px  #888888;
     
   }
-  @keyframes upp {
-      from{
-        transform: translateY(0%);
-      }
-      to{
-      }
-  }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #444;
+
+}
