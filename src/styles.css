@@ -11,7 +11,7 @@
 .project{
   text-decoration: none;
 }
-.project h1{
+.project h3{
   color: black;
 }
 .project p{
@@ -23,6 +23,7 @@
     padding: 14px 25px;
     margin-right: 20px;
     margin-top: 10px;
+    width: 50%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -32,10 +33,9 @@
   .pr{
     color: black;
     padding: 14px;
-    margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 30px;
-    /* text-align: center; */
+    /* text-align: justify; */
     text-decoration: none;
     display: inline-block;
     border: black;
@@ -59,5 +59,8 @@
 
 ::-webkit-scrollbar-thumb{
   background-color: #444;
+}
 
+.centered{
+margin-left: 25%;
 }

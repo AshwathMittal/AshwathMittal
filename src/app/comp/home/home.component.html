@@ -1,7 +1,11 @@
-<div class="container ">
     
-    <br>
-    <p style="font-size: 70px;">Hi!</p>
+   
+    <p   style="font-size: 70px;">Hi!</p>
+    
+
+    
+<div class="container ">
+
 
     <br>
    
@@ -21,13 +25,8 @@
 
     </div>
     <br><br>
-    <p style="font-size: 35px;">Social Links</p>
-    <div class="container-fluid">
-        <p> <a href="https://discord.gg/cxzDCqDwwM"  target="_blank" class="socio"> <img src="discord.png" height ="32" width = "32" alt="Discord"> Discord</a>
-        <a href="https://github.com/AshwathMittal/"  target="_blank"class="socio"> <img src="github.png" height ="32" width = "32" alt="GitHub"> GitHub</a>
-        <a href="mailto:ashwathmittal@gmail.com" class="socio" target="_blank"> <img src="gmail.png" height ="32" width = "32" alt="E-Mail"> E-Mail</a></p>
-    </div>
-    
+    <!-- <p style="font-size: 35px;">Social Links</p> -->
+
 
     <br><br>
 
@@ -38,7 +37,7 @@
     </p>
     <div class="container-fluid">
         <ul class="">
-            <li *ngFor="let skill of skills" class="list-group-item"><u style="font-size: 30px;">{{skill.name}}</u> <br><b>Experience:</b> {{skill.experience}}<br><b [ngClass]="{'invisible': !skill.itof }">Frameworks / Languages / Tool I use:</b> {{skill.tools}} </li>
+            <li *ngFor="let skill of skills" class="list-group-item"><u style="font-size: 30px;">{{skill.name}}</u> <br><b>Experience:</b> {{skill.experience}}<br><b [ngClass]="{'invisible': !skill.itof }">Frameworks / Languages / Tool I know:</b> {{skill.tools}} </li>
           </ul>
         </div>
 
@@ -46,5 +45,6 @@
 
 <app-projs></app-projs>
 </div>
+<app-my-foot></app-my-foot>
 
 

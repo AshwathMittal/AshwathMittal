@@ -1,6 +1,6 @@
 export class Pro{
     title: string
     desc: string
-    url: string
+    src: string
     href: string
 }

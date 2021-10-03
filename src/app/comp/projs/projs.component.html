@@ -1,23 +1,33 @@
+
+<div class="container">
 <p style="font-size: 35px;">My Past Work</p>
-    <!-- <div class="pr"> -->
-        <div class="row" *ngFor="let proj of project">
-            <div class="col-8 pr">
+ 
+<div class="container-fluid">
+        <div  class="container" *ngFor="let proj of project">
+            <div class="pr ">
 
             <a class="project" [href]="proj.href" target="_blank">
-            <h1>{{proj.title}}</h1>
-          
-            <p>{{proj.desc}}</p>
+                <div style="display: flex;">
+            <img [src]="proj.src" alt="Sorry The Image did not load"  style="margin-right: 10px;" height="32px" width="32px">
+<br>
+            <h3 >{{proj.title}}</h3>
+     
+
+        </div>
+            <p class="text-capitalize">{{proj.desc}}</p>
         
 
      
         </a>
     
     </div>
-    <div class="col-2" style="margin-left: 100px;">
+    <!-- <div class="col-2">
         <br><br>
-    <img [src]="proj.url" alt="Sorry The Image did not load" height="128">
-</div>
+  
+</div> -->
         </div>
-    <!-- </div> -->
+    </div>
+    </div>
+
     <br>
  
