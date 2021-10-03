@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from 'src/skills';
+import Typewriter from 't-writer.js'
+
 
 @Component({
   selector: 'app-home',
@@ -7,43 +8,25 @@ import { Skill } from 'src/skills';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  skills: Skill[]
+  
   constructor() { 
-    this.skills=[
-      {
-        name: "Web Development",
-        experience: "Advanced , 1.5yrs",
-        tools: "Angular, HTML, CSS, JavaScript, NodeJs, MongoDB",
-        itof: true
-      },
-      {
-        name: "Robotics",
-        experience: "Advanced",
-        tools: "Raspberry Pi, Arduino UNO",
-        itof: true
-      },
-      {
-        name: "Python",
-        experience: "Beginner , Currently Learning",
-        tools: null,
-        itof: false
-      },
-      {
-        name: "Linux",
-        experience: "Intermediate",
-        tools: null,
-        itof: false
-      },
-      {
-        name: "Dev Ops",
-        experience: "Intermediate",
-        tools: "Git",
-        itof: true
-      }
-    ]
+    
   }
+   
 
   ngOnInit(): void {
-  }
-
+    const target = document.querySelector('.tw')
+    const target1 = document.querySelector('.tw1')
+    const target2 = document.querySelector('.tw2')
+    const options = {
+      loop: false,
+      animateCursor: false,
+      cursorColor: 'white'
+    }
+    
+    const writer = new Typewriter(target, options)
+  writer
+  .type('Hi!')
+  .start()    
+    }
 }

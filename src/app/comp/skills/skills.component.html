@@ -1,0 +1,12 @@
+
+        <p
+        style="font-size: 35px;" class="tw2">
+      Skills
+  </p>
+  <div class="container-fluid">
+      <ul class="">
+          <li *ngFor="let skill of skills" class="list-group-item"><u style="font-size: 30px;">{{skill.name}}</u> <br><b>Experience:</b> {{skill.experience}}<br><b [ngClass]="{'invisible': !skill.itof }">Frameworks / Languages / Tool I know:</b> {{skill.tools}} </li>
+        </ul>
+      </div>
+
+  <br><br>
