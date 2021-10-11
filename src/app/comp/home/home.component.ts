@@ -16,8 +16,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     const target = document.querySelector('.tw')
-    const target1 = document.querySelector('.tw1')
-    const target2 = document.querySelector('.tw2')
     const options = {
       loop: false,
       animateCursor: false,
