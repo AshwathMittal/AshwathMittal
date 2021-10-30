@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Typewriter from 't-writer.js'
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import Typewriter from 't-writer.js'
 })
 export class HomeComponent implements OnInit {
   
-  constructor() { 
+  constructor(private router: Router) { 
     
   }
    
@@ -26,5 +26,10 @@ export class HomeComponent implements OnInit {
   writer
   .type('Hi!')
   .start()    
+    }
+
+    terminal(){
+    this.router.navigateByUrl('terminal');
+      
     }
 }

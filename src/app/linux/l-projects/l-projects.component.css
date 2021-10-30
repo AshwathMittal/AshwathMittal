@@ -1,0 +1,18 @@
+.project{
+    text-decoration: none;
+    color: black;
+  }
+  .pr h3{
+    color: #4AF626;
+  }
+  .pr p{
+    color: #4AF626;
+  }
+
+  .pr{
+    padding: 14px;
+    text-decoration: none;
+    display: inline-block;
+    border: #4AF626;
+    border-style: solid;
+  }

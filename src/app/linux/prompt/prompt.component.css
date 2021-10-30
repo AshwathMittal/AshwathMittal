@@ -1,0 +1,11 @@
+.info{
+    width: 60%;
+    margin-right: -10px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

@@ -8,9 +8,22 @@ import { ProjsComponent } from './comp/projs/projs.component';
 import { ContactComponent } from './comp/contact/contact.component';
 import { MyFootComponent } from './comp/my-foot/my-foot.component';
 import { SkillsComponent } from './comp/skills/skills.component';
+import { FormsModule } from '@angular/forms';
+import { TerminalComponent } from './linux/terminal/terminal.component';
+import { PromptComponent } from './linux/prompt/prompt.component';
+import { LProjectsComponent } from './linux/l-projects/l-projects.component';
+import { LSkillsComponent } from './linux/l-skills/l-skills.component';
+import { AboutComponent } from './linux/about/about.component';
+import { LContactComponent } from './l-contact/l-contact.component';
 
 @NgModule({
   declarations: [
+    LContactComponent,
+    AboutComponent,
+    TerminalComponent,
+    PromptComponent,
+    LSkillsComponent,
+    LProjectsComponent,
     AppComponent,
     HomeComponent,
     ProjsComponent,
@@ -19,8 +32,9 @@ import { SkillsComponent } from './comp/skills/skills.component';
     SkillsComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
     {provide : LocationStrategy , useClass: HashLocationStrategy}

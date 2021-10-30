@@ -1,0 +1,29 @@
+<div class="comm">
+    <div class="prompt">
+        <span class="user">notroot</span>@<span class="host">localhost</span>
+        <span class="prompt-symbol">$</span>
+        <div class="input">
+            <a class="input-text">{{cmd.name}}</a>
+        </div>
+    </div>
+    <br>
+    <div class="info">
+        <app-l-projects *ngIf="cmd.name == 'projects'"></app-l-projects>
+        <app-l-skills *ngIf="cmd.name == 'skills'"></app-l-skills>
+        <app-about *ngIf="cmd.name == 'about'"></app-about>
+        <app-l-contact *ngIf="cmd.name == 'contact'"></app-l-contact>
+        <div class="help" *ngIf="cmd.name == 'help'">
+            <div class="container-fluid">
+                <ul>
+                    <li>[0]: Display This help Menu => <b><u>help</u></b></li>
+                    <li>[1]: See My Skills =>  <b><u>skills</u></b></li>
+                    <li>[2]: See My Previous Projects =>  <b><u>projects</u></b></li>
+                    <li>[3]: About Me =>  <b><u>about</u></b></li>
+                    <li>[4]: Contact Info =>  <b><u>Contact</u></b></li>
+                    <li>[5]: Resest terminal =>  <b><u>clear</u></b></li>
+                    <li>[6]: Go Back To Normal View =>  <b><u>exit</u></b></li>
+                </ul>
+            </div>
+        </div>
+</div>
+</div>

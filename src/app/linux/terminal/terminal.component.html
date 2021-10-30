@@ -1,0 +1,48 @@
+<section>
+    <div class="terminal" id="cmd">
+        <div class="commands" >
+            <div class="welcome">
+                <pre>
+
+⠛⠛⣿⣿⣿⣿⣿⡷⢶⣦⣶⣶⣤⣤⣤⣀⠀ 
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀
+⠀⠀⠀⠉⠉⠉⠙⠻⣿⣿⠿⠿⠛⠛⠛⠻⣿⣿⣇
+⠀⠀⢤⣀⣀⣀⠀⠀⢸⣷⡄⠀⣁⣀⣤⣴⣿⣿⣿⣆
+⠀⠀⠀⠀⠹⠏⠀⠀⠀⣿⣧⠀⠹⣿⣿⣿⣿⣿⡿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠿⠇⢀⣼⣿⣿⠛⢯⡿⡟
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠦⠴⢿⢿⣿⡿⠷⠀⣿⠀
+⠀⠀⠀⠀⠀⠀⠀⠙⣷⣶⣶⣤⣤⣤⣤⣤⣶⣦⠃
+⠀⠀⠀⠀⠀⠀⠀⢐⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⢿⣿⣿⣿⣿⠟⠁
+                </pre>
+                <div class="about">
+                    <b style="color: hsl(196,92%,78%);">Name:</b> Ashwath Mittal
+                    <br><b style="color: hsl(196,92%,78%);">About:</b> <Br>
+                        My Name Is Ashwath Mittal. I Am A 10th Grade Student With Keen Interest In Computer Science And Robotics. 
+                        <u>Type 'help' to know more.</u>
+                    </div>
+
+            </div>
+            <div *ngFor="let cmd of commands">
+                <app-prompt [cmd] = "cmd"></app-prompt>
+                </div>
+                <!-- <app-l-skills *ngIf="s"></app-l-skills>
+                <app-l-projects *ngIf="p"></app-l-projects> -->
+            <div class="comm">
+                <div class="prompt">
+                    <span class="user">notroot</span>@<span class="host">localhost</span>
+                    <span class="prompt-symbol">$</span>
+                    <div class="input">
+                        <form (ngSubmit)="name()">
+                        <input type="text" class="input-text" placeholder="Type a command and hit enter" [(ngModel)]="in" id = "in" name="in" >
+    <button type="submit" style="display: none;"></button>
+                    
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

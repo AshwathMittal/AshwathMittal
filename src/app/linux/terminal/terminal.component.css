@@ -1,0 +1,77 @@
+section{
+    height: 100vh;
+    width: 100%;
+    background-image: url("981851.png");
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: none;
+}
+
+body{
+    overflow: none;
+}
+
+::selection{
+    background-color: rgba(9, 170, 57, 0.288);
+}
+.terminal{
+    overflow:scroll;
+    scroll-behavior: auto;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: #4AF626;
+    opacity: 0.6;
+    font-family: "Menlo", "DejaVu Sans Mono", "Consolas", "Lucida Console", monospace;
+  
+}
+
+.commands{
+    padding-top: 50px;
+    padding-left: 50px;
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+    color: #4AF626;
+    opacity: 1;
+}
+
+.welcome{
+    display: flex;
+    animation: fadein 1s;
+    width: 100%;
+}
+
+.about{
+    /* display: flex; */
+    width: 60%;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.comm{
+    margin-top: 50px;
+}
+.prompt{
+    display: inline-flex;
+    width: 100%;
+}
+.input{
+    width: 100%;
+}
+.input-text{
+    margin-left: 20px;
+    width: 300px;
+    background: transparent;
+    border: none;
+    color: tomato;
+}
+input:focus{
+    outline: none;
+}
+

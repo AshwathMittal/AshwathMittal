@@ -1,4 +1,42 @@
-    
+<div class="sticky-top">
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" >
+      <img src="boy.png" alt="Logo"  class="d-inline-block align-text-top">
+      
+      Ashwath Mittal
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  routerLink="">Home</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link link" aria-current="page"  routerLink="contact">Contact Me</a>
+        </li>
+
+      </ul>
+    </div>
+    <!-- width="30" height="24" -->
+  </div>
+  <div  >
+    <a  class="btn btn-block btn-social btn-dark" href="https://github.com/AshwathMittal">
+      <i class="fa fa-github"></i> Follow Me On GitHub
+    </a>
+    </div>
+</nav>
+
+</div>
+<div class="float">
+  <b>Terminal Mode:</b>
+<div class="float-right">
+    <input type="checkbox" id="switch" (change)="terminal()" /><label for="switch">Toggle</label>
+  </div>
+</div>
+
    
     <p   style="font-size: 70px;" class="tw"></p>
     
@@ -35,5 +73,3 @@
 <app-projs></app-projs>
 </div>
 <app-my-foot></app-my-foot>
-
-
