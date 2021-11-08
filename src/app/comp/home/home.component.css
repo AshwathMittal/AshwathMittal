@@ -1,9 +1,9 @@
 .float{
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end;
     margin-top: 20px;
+	width: 100%;
 }
-
 input[type=checkbox]{
 	height: 0;
 	width: 0;
@@ -11,10 +11,7 @@ input[type=checkbox]{
 }
 
 .float-right{
-    width: 10%;
-    margin-top: -25px;
-    margin-left: 10px;
-    float: right;
+	margin-right: 10px;
 }
 
 label {
@@ -53,3 +50,6 @@ label:active:after {
 	width: 50px;
 }
 
+.hidden{
+	display: none;
+}

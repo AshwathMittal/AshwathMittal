@@ -15,7 +15,8 @@ body{
     background-color: rgba(9, 170, 57, 0.288);
 }
 .terminal{
-    overflow:scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     scroll-behavior: auto;
     height: 100vh;
     width: 100%;
@@ -46,7 +47,7 @@ body{
     /* display: flex; */
     width: 60%;
     margin-top: 80px;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
 @keyframes fadein {
@@ -75,3 +76,26 @@ input:focus{
     outline: none;
 }
 
+
+@media only screen and (max-width: 800px) {
+    .pre{
+        display: none;
+    }
+    .about{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+ }
+ .commands{
+    padding-top: 0px;
+    padding-left: 10px;
+}
+.comm{
+    margin-top: 10px;
+}
+.prompt{
+    width: 10%;
+    font-size: 15px;
+}
+
+}

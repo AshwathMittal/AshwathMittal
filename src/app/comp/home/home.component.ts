@@ -29,7 +29,8 @@ export class HomeComponent implements OnInit {
     }
 
     terminal(){
-    this.router.navigateByUrl('terminal');
+      setTimeout(() => this.router.navigate(['/terminal'],{ skipLocationChange: true }), 1000);
+    // this.router.navigateByUrl('terminal');//, { skipLocationChange: true };
       
     }
 }

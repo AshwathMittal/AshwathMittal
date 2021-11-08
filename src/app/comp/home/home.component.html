@@ -30,11 +30,12 @@
 </nav>
 
 </div>
-<div class="float">
-  <b>Terminal Mode:</b>
-<div class="float-right">
+<!-- [ngClass]="{'hidden': deviceinfo}" -->
+<div class="float" >
+  <b style="margin-right: 10px;">Terminal Mode:</b>
+<!-- <div class="float-right"> -->
     <input type="checkbox" id="switch" (change)="terminal()" /><label for="switch">Toggle</label>
-  </div>
+  <!-- </div> -->
 </div>
 
    
