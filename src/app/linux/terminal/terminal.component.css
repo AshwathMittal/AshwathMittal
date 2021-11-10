@@ -15,7 +15,6 @@ body{
     background-color: rgba(9, 170, 57, 0.288);
 }
 .terminal{
-    overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: auto;
     height: 100vh;
