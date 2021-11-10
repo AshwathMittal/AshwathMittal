@@ -6,16 +6,11 @@ section{
     background-attachment: fixed;
     overflow: none;
 }
-
-body{
-    overflow: none;
-}
-
 ::selection{
     background-color: rgba(9, 170, 57, 0.288);
 }
 .terminal{
-    overflow-y: scroll;
+    overflow: scroll;
     scroll-behavior: auto;
     height: 100vh;
     width: 100%;
@@ -98,3 +93,5 @@ input:focus{
 }
 
 }
+
+
