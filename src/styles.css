@@ -1,4 +1,12 @@
-
+.loading{
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  position: absolute;
+}
 ::-moz-selection { /* Code for Firefox */
     background: #F7A307;
     
