@@ -53,3 +53,18 @@ label:active:after {
 .hidden{
 	display: none;
 }
+
+.btn-fiverr{
+	background-color: #1dbf73;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    border: none;
+    padding: 15px 35px;
+    margin: 0;
+    display: inline-block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -webkit-transition: color .2s,background-color .2s,box-shadow .2s,border .2s;
+    transition: color .2s,background-color .2s,box-shadow .2s,border .2s;
+}
