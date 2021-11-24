@@ -24,17 +24,5 @@ export class Skill{
               experience: "Beginner , Currently Learning",
               tools: null,
               itof: false
-            },
-            {
-              name: "Linux",
-              experience: "Intermediate",
-              tools: null,
-              itof: false
-            },
-            {
-              name: "Dev Ops",
-              experience: "Intermediate",
-              tools: "Git",
-              itof: true
             }
           ]
