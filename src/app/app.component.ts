@@ -17,7 +17,7 @@ export class AppComponent implements OnInit{
     this.tracker();
 }
 tracker(){
-  this.http.get('http://api.ipify.org/?format=json').subscribe(data => {
+  this.http.get('https://api.ipify.org/?format=json').subscribe(data => {
     this.ip_address = data['ip'];
     this.name = '';
     navigator.geolocation.getCurrentPosition(position => {
