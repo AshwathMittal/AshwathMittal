@@ -1,77 +1,84 @@
-<div class="sticky-top">
-<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" >
-      <img src="boy.png" alt="Logo"  class="d-inline-block align-text-top">
-      
-      Ashwath Mittal
+<nav class="stick">
+  <div class="logo">
+    <a class="navbar-brand">
+      <img src="boy.png" alt="icon" class="d-inline-block align-text-top">
+Ashwath Mittal
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page"  routerLink="">Home</a>
-        </li>        
-        <li class="nav-item">
-          <a class="nav-link link" aria-current="page"  routerLink="contact">Contact Me</a>
-        </li>
-
-      </ul>
-    </div>
-    <!-- width="30" height="24" -->
   </div>
-  <div  >
-    <a  class="btn btn-block btn-social btn-dark" href="https://github.com/AshwathMittal">
-      <i class="fa fa-github"></i> Follow Me On GitHub
-    </a>
-    </div>
+  <div class="float">
+    <button (click)="OpenTerminal()" class="button"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-terminal" viewBox="0 0 16 16">
+      <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+      <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
+    </svg></button>
+  </div>
 </nav>
-
-</div>
-<!-- [ngClass]="{'hidden': deviceinfo}" -->
-<div class="float" >
+<!-- <div class="float" >
   <b style="margin-right: 10px;">Terminal Mode:</b>
-<!-- <div class="float-right"> -->
+
     <input type="checkbox" id="switch" (change)="terminal()" /><label for="switch">Toggle</label>
-  <!-- </div> -->
+
+</div> -->
+
+
+
+   <section class="home-page">
+<div class="Menu"></div>
+<div class="menu-left">
+  <a class="btn" class="menu-list-item">Hello</a>
+  <a class="btn" class="menu-list-item">I am</a>
+  <a class="btn" class="menu-list-item"  style="color: rgb(43,254,135);">Ashwath</a>
 </div>
-
-   
-    <p   style="font-size: 70px;" class="tw"></p>
     
+<div class="menu-right">
+  <p  style="font-size: 35px;" class="menu-list-item">About</p>
+      <p class="some-shit-about-me-i-hope-no-one-sees-this-class">I am a 10th Grade Student with keen
+       Interest in Computer Science and Robotics. My Journey Began with Robotics when I was in class 6. 
+       I have Learned Arduino and Raspberry Pi Based Robotics.
+      Then in 2020 when Lockdown Started, Everything started happening online, I introduced myself to Programming, first i started with Web Development.
+      <br><br>
+      I am currenty a Frontend-Web Developer with a little bit knowledge of Backend.
+     
+    </p>
+  </div>
+  <img class="blob" src="assets/blob.png" alt="">
+<div class="support-strip">
+  <div class="container">
+    <h1 class="heading">Here's What I Can Do</h1>
 
-    
-<div class="container ">
-  <br>
-        <button class="btn-fiverr" ><a style="text-decoration: none;color: #fff;"href="https://www.fiverr.com/ashwatthmittal/">Hire Me</a></button>
+    <div class="know">
 
-    <br>
-    <br>
-   
-    <p  style="font-size: 35px;"  class="tw1">About</p>
-    <div class="container-fluid text-capitalize">  
-        My Name Is <u class="invert">Ashwath Mittal</u>. I am a 10th Grade Student with keen
-         Interest in <a href="#">Computer Science</a> and <a href="#">Robotics</a>. My Journey Began with Robotics when I was in class 6. 
-         I have Learned <a href="#">Arduino</a> and <a href="#">Raspberry Pi</a> Based Robotics.
-        Then in 2020 when Lockdown Started, Everything started happening online, while other kids were busy watching netflix all day  
-        I introduced myself to Programming, first i started with <a href="#">Web Development</a>.
-         After that I tried to get started with <a href="#">Ethical Hacking</a>, but it was something I
-          could not do at that time but this helped me get fair experience with <a href="#">Python</a> and 
-          <a href="">Linux</a>.
-         Going forward in my journey I learned Raspberry Pi. <br>
-         Now currently I am Learning Python and have decided to go in the feild of <a href="">Data Science</a>.
-
+    <div class="card" *ngFor="let skill of skills">      
+      <h3>{{skill.name}}</h3>
+      <p class="description">
+      {{skill.desc}}
+      </p>
     </div>
-    <br><br>
-    <!-- <p style="font-size: 35px;">Social Links</p> -->
+  </div>
+   </div>
+  </div>
+<section class="projects">
+  <img class="blob2" src="assets/blob.png" alt="Blob">
+<div class="container">
+  <h1 class="heading">Here are My Projects</h1>
 
-
-    <br><br>
-
-  <app-skills></app-skills>
-
-<app-projs></app-projs>
+ <div class="know">
+   <div class="card" *ngFor="let porject of projects">
+     <h3>{{porject.title}}</h3>
+     <p class="description">{{porject.desc}}</p>
+      <a href="{{porject.href}}" target="_blank" class="btn btn-fiverr">View Project</a>
+   </div> 
+ </div>
 </div>
-<app-my-foot></app-my-foot>
+
+<img class="blob" src="assets/blob.png" alt="Blob" style="filter: invert(0.4);">
+
+</section>
+</section>
+
+<!-- 
+<section class="below-1">
+   </section>
+   <section class="below-2">
+    <app-projs></app-projs>
+   </section>
+<app-my-foot></app-my-foot> -->

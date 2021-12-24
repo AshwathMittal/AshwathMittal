@@ -1,11 +1,6 @@
-export class Pro{
-    title: string
-    desc: string
-    src: string
-    href: string
-}
 
-export const projects: Pro[] = [
+
+export const projects = [
      // {
       //   title: "Travid",
       //   desc: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ",
@@ -20,7 +15,7 @@ export const projects: Pro[] = [
       },
       {
         title: "ChatBot",
-        desc: 'This is a prototype of a chatBot made in HTML, CSS & Js. This is just a design idea, therefore the bot does not reply anything except "Hello!"',
+        desc: 'This is a prototype of a chatBot made in HTML, CSS & Js. This is just a tempelate, therefore the bot does not reply anything except "Hello!"',
         src: "assets/chatbot.gif",
         href: "https://ashwathmittal.github.io/first-chat-bot/"
       },      

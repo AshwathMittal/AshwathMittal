@@ -1,36 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import Typewriter from 't-writer.js'
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { projects } from 'src/projects';
+import { skills } from 'src/skills';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
-  
+export class HomeComponent {
+  projects = projects;
+  skills = skills;
   constructor(private router: Router) { 
-    
-  }
-   
 
-  ngOnInit(): void {
-    const target = document.querySelector('.tw')
-    const options = {
-      loop: false,
-      animateCursor: false,
-      cursorColor: 'white'
-    }
-    
-    const writer = new Typewriter(target, options)
-  writer
-  .type('Hi!')
-  .start()    
-    }
 
-    terminal(){
+  }   
+  OpenTerminal(){
       setTimeout(() => this.router.navigate(['/terminal'],{ skipLocationChange: true }), 1000);
     // this.router.navigateByUrl('terminal');//, { skipLocationChange: true };
-      
+
     }
 }

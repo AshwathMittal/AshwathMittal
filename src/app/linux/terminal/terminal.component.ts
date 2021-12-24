@@ -1,6 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { commands } from 'src/commands';
-import { sill } from 'src/skills';
 import { Router } from '@angular/router';
 
 
@@ -10,10 +9,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./terminal.component.css']
 })
 
+
 export class TerminalComponent implements OnInit {
   in: string;
+  
   commands: commands[];
-  skills = sill;
     constructor(private router: Router) {  
       this.commands = JSON.parse(localStorage.getItem('commands'));
       if(this.commands == null){

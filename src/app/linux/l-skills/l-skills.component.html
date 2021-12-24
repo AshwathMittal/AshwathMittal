@@ -4,6 +4,8 @@ Skills
 </p>
 <div class="container-fluid">
 <ol>
-  <li *ngFor="let skill of skills" class=""><u style="font-size: 30px;">{{skill.name}}</u> <br><b>Experience:</b> {{skill.experience}}<br><b [ngClass]="{'invisible': !skill.itof }">Frameworks / Languages / Tool I know:</b> {{skill.tools}} </li>
+  <li *ngFor="let skill of skills" class=""><u style="font-size: 30px;">
+    {{skill.name}}</u> <br> {{skill.desc}} </li>
+    <br>
 </ol>
 </div>

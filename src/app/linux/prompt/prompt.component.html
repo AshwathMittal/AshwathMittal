@@ -10,8 +10,18 @@
     <div class="info">
         <app-l-projects *ngIf="cmd.name == 'projects'"></app-l-projects>
         <app-l-skills *ngIf="cmd.name == 'skills'"></app-l-skills>
-        <app-about *ngIf="cmd.name == 'about'"></app-about>
-        <app-l-contact *ngIf="cmd.name == 'contact'"></app-l-contact>
+        <div *ngIf="cmd.name == 'about'">
+            <br>
+            I am a 10th Grade Student with keen Interest in Computer Science and Robotics. My Journey Began with Robotics when I was in class 6. I have Learned Arduino and Raspberry Pi Based Robotics. Then in 2020 when Lockdown Started, Everything started happening online, I introduced myself to Programming, first i started with Web Development.
+        
+            I am currenty a Frontend-Web Developer with a little bit knowledge of Backend.
+            
+            
+            <br></div>
+        <div *ngIf="cmd.name == 'contact'"><br>
+            <p><a href="mailto:ashwathmittal@gmail.com" class="btn" target="_blank" style="text-decoration: none;">Mail Me</a></p>
+            <h4>Also Follow Me On: <a href="https://github.com/AshwathMittal">GitHub</a></h4>
+        </div>
         <div class="help" *ngIf="cmd.name == 'help'">
             <div class="container-fluid">
                 <ul>

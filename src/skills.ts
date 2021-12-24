@@ -1,28 +1,14 @@
-export class Skill{
-    name: string
-    experience: string
-    tools: string
-    itof: boolean
-}
-
-
-   export const sill: Skill[] =  [
+   export const skills =  [
             {
               name: "Web Development",
-              experience: "Advanced , 1.5yrs",
-              tools: "Angular, HTML, CSS, JavaScript, NodeJs, MongoDB",
-              itof: true
-            },
-            {
-              name: "Robotics",
-              experience: "Advanced",
-              tools: "Raspberry Pi, Arduino UNO",
-              itof: true
+              desc: `  I am a Frontend-Developer and I am well experienced with HTML, CSS, Javascript, TypeScript, Angular, NodeJS, Express, MongoDB.
+              Though I know a few Backend technologies I choose to be a Frontend-Developer.`
             },
             {
               name: "Python",
-              experience: "Beginner , Currently Learning",
-              tools: null,
-              itof: false
+              desc: `
+              I am a Python Learner with an Intermidiate experience with Python.
+              I have a little bit knowledge of Machine Learning and Deep Learning.
+              `
             }
           ]

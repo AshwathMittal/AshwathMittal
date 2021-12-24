@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { sill } from 'src/skills';
+import { skills } from 'src/skills';
 
 @Component({
   selector: 'app-l-skills',
@@ -7,7 +7,7 @@ import { sill } from 'src/skills';
   styleUrls: ['./l-skills.component.css', "../terminal/terminal.component.css"]
 })
 export class LSkillsComponent implements OnInit {
-  skills=sill;
+  skills=skills;
 
   constructor() { }
 
