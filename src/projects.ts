@@ -31,10 +31,16 @@ export const projects: Pro[] = [
         href: "https://github.com/AshwathMittal/AI-chat-bot"
       },
       {
-        title: "To Do List App Made With Angular",
-        desc: "This is my first angular app, I made this while learning angular (Even this webpage is also made in Angular). In this WebApp you can store your to do list. The To-Do items are stored in the browser's local storage, so you won't loose the saved items when the page is refreshed.",
+        title: "To Do List App",
+        desc: "This is my first angular app, I made this while learning angular. In this WebApp you can store your to do list. The To-Do items are stored in the browser's local storage, so you won't loose the saved items when the page is refreshed.",
         src: "assets/todolist.gif",
         href: "https://ashwathmittal.github.io/ListToDo/"
+      },
+      {
+        title: "Diary Entry App",
+        desc: "This is a simple diary entry app made with HTML, CSS & Ts using Angular CLI. It is a simple app which allows you to write your diary entries in a simple way.",
+        src: "assets/diary.png",
+        href: "https://ashwathmittal.github.io/De-Diary/"
       },
       // {
       //   title: "Alarm Clock that Won't let you sleep",
