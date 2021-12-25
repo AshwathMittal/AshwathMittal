@@ -152,7 +152,7 @@ nav{
 
 @media screen and (max-width: 1000px) {
 	.menu-left{
-		width: 100%;
+		/* width: 100%; */
 		position: relative;
 	}
 	.menu-right{
