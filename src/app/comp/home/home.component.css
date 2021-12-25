@@ -1,13 +1,8 @@
 .float{
     display: inline-flex;
     justify-content: flex-end;
-    margin-top: -50px;
+    margin-top: -20px;
 	width: 100%;
-}
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
 }
 nav{
 	display: flex;
@@ -18,85 +13,19 @@ nav{
 	background: linear-gradient(90deg, rgba(76,102,204,1) 0%, rgba(193,38,203,1) 100%);
 	padding: 5px;
 }
-
-
-
 .navbar-brand{
 	padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;text-decoration:none;white-space:nowrap;
 	background: -webkit-linear-gradient(45deg, rgb(1, 191, 113) 0%, rgb(43, 210, 255) 52%, rgb(43, 255, 136) 90%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-
 .navbar-brand img{
 	display:inline-block!important;
 	vertical-align:text-top!important;
 	font-size: 72px;
 
 }
-.nav-list{
-	display: inline-flex;
-	justify-content: flex-end;
-	width: auto;
-}
-
-.nav-list li{
-	list-style: none;
-	margin-right: 20px;
-	font-size: 18px;
-	color: black;
-	text-decoration: none;
-	text-transform: uppercase;
-	/* font-weight: bold; */
-	cursor: pointer;
-	font-weight: 100;
-}
-
-.float-right{
-	margin-right: 10px;
-}
-
-label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 60px;
-	height: 30px;
-	background: grey;
-	display: block;
-	border-radius: 100px;
-	position: relative;
-}
-
-label:after {
-	content: '';
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 25px;
-	height: 20px; 
-	background: #fff;
-	border-radius: 90px;
-	transition: 0.3s;
-}
-
-input:checked + label {
-	background: #bada55;
-}
-
-input:checked + label:after {
-	left: calc(100% - 5px);
-	transform: translateX(-100%);
-}
-
-label:active:after {
-	width: 50px;
-}
-
-.hidden{
-	display: none;
-}
-
-.btn-fiverr{
+.btn-project{
 	background-color: #1dbf73;
     font-size: 16px;
     line-height: 16px;
@@ -112,7 +41,7 @@ label:active:after {
     transition: color .2s,background-color .2s,box-shadow .2s,border .2s;
 }
 
-.btn-fiverr:hover{
+.btn-project:hover{
 	 background: rgb(72,49,212);
 	color: #1dbf73; 
 	animation: cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
@@ -127,8 +56,9 @@ label:active:after {
 .home-page{
 	color: hsl(150,6%,94%);
 	min-height: 100vh;
-	background: linear-gradient(#04091ecc,#04091e66), url(../../../assets/black.png);
+	background: linear-gradient(#04091ecc,#04091e66), #000;
 	/* padding: 10px; */
+	width: 100%;
 }
 
 .Menu{
@@ -164,12 +94,12 @@ label:active:after {
 }
 
 
-.some-shit-about-me-i-hope-no-one-sees-this-class{
+.why-are-you-here{
 	font-weight: 500;
 	letter-spacing: 1px;	
 }
 
-.support-strip{
+.section-2{
 	display: inline-block;
     background:rgb(72,49,212);
     position: relative;
@@ -208,14 +138,8 @@ label:active:after {
 	width: 45%;
 }
 
-.description{
+.card p{
 	padding-left: 15px;
-}
-
-.projects{
-	color: hsl(150,6%,94%);
-	min-height: 100vh;
-	background: linear-gradient(#04091ecc,#04091e66), url(../../../assets/black.png);
 }
 
 .blob2{
@@ -256,7 +180,7 @@ label:active:after {
 }
 
 
-.button {
+/* .button {
 	position:absolute;
 	top:10;
 	right:15;
@@ -269,4 +193,4 @@ label:active:after {
 	transition: all 0.3s ease-in-out;
 	letter-spacing: -1px;
 	font-weight: 700;
-}
+} */
