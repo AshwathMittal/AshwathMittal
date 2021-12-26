@@ -13,7 +13,7 @@ export class HomeComponent {
   constructor(private router: Router) { 
 
 
-  }   
+  }
   OpenTerminal(){
       setTimeout(() => this.router.navigate(['/terminal'],{ skipLocationChange: true }), 1000);
     // this.router.navigateByUrl('terminal');//, { skipLocationChange: true };
