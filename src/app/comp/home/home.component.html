@@ -1,63 +1,75 @@
-<!-- <nav class="stick">
-	<div class="logo">
-		<a class="navbar-brand">
-		<img src="boy.png" alt="icon" class="d-inline-block align-text-top">
-		Ashwath Mittal
-		</a>
-	</div>
-
-</nav> -->
-
 <section class="home-page">
-	<div class="float">
-		<button (click)="OpenTerminal()" class="btn" style="filter: invert(1);">
-			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-terminal" viewBox="0 0 16 16">
-				<path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
-				<path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
-			</svg>
-		</button>
-	</div>
-	<div class="menu-left">
-		<a class="btn" class="menu-list-item">Hello</a>
-		<a class="btn" class="menu-list-item">I am</a>
-		<a class="btn" class="menu-list-item"  style="color: rgb(43,254,135);">Ashwath</a>
-	</div>
-	<div class="menu-right">
-		<p  style="font-size: 35px;" class="menu-list-item">About</p>
-		<p class="why-are-you-here">I am a 10th Grade Student with keen
-			Interest in Computer Science and Robotics. My Journey Began with Robotics when I was in class 6. 
-			I have Learned Arduino and Raspberry Pi Based Robotics.
-			Then in 2020 when Lockdown Started, Everything started happening online, I introduced myself to Programming, first i started with Web Development.
-			<br><br>
-			I am currenty a Frontend-Web Developer with a little bit knowledge of Backend.
-		</p>
-	</div>
-	<img class="blob" src="assets/blob.png" alt="">
-	<div class="section-2">
-		<div class="container">
-			<h1 class="heading">Here's What I Can Do</h1>
-			<div class="know">
-				<div class="card" *ngFor="let skill of skills">
-					<h3>{{skill.name}}</h3>
-					<p>
-						{{skill.desc}}
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<section class="home-page">
-		<img class="blob2" src="assets/blob.png" alt="Blob">
-		<div class="container">
-			<h1 class="heading">Here are My Projects</h1>
-			<div class="know">
-				<div class="card" *ngFor="let porject of projects">
-					<h3>{{porject.title}}</h3>
-					<p>{{porject.desc}}</p>
-					<a href="{{porject.href}}" target="_blank" class="btn btn-project">View Project</a>
-				</div>
-			</div>
-		</div>
-		<img class="blob" src="assets/blob.png" alt="Blob" style="filter: invert(0.2);">
-	</section>
+  <div class="float">
+    <button (click)="OpenTerminal()" class="btn" style="filter: invert(1)">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        class="bi bi-terminal"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"
+        />
+        <path
+          d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="menu-left">
+    <a class="btn" class="menu-list-item">Hello</a>
+    <a class="btn" class="menu-list-item">I am</a>
+    <a class="btn" class="menu-list-item" style="color: rgb(43, 254, 135)"
+      >Ashwath</a
+    >
+  </div>
+  <div class="menu-right">
+    <p style="font-size: 35px" class="menu-list-item">About</p>
+    <p class="why-are-you-here">
+      I am a 10th grade student with keen interest in Computer Science and
+      Robotics. My journey began with Robotics when I was in class 6. I have
+      learned Arduino and Raspberry Pi based Robotics. Then in 2020 when
+      lockdown started, everything started happening online, I introduced myself
+      to programming, first i started with Web-Development. <br /><br />
+      I am currenty a Front-end web developer with a little bit knowledge of
+      backend.
+    </p>
+  </div>
+  <img class="blob" src="assets/blob.png" alt="" />
+  <div class="section-2">
+    <div class="container">
+      <h1 class="heading">Here's What I Can Do</h1>
+      <div class="know">
+        <div class="card" *ngFor="let skill of skills">
+          <h3>{{ skill.name }}</h3>
+          <p>
+            {{ skill.desc }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="home-page">
+    <img class="blob2" src="assets/blob.png" alt="Blob" />
+    <div class="container">
+      <h1 class="heading">Here are My Projects</h1>
+      <div class="know">
+        <div class="card" *ngFor="let porject of projects">
+          <h3>{{ porject.title }}</h3>
+          <p>{{ porject.desc }}</p>
+          <a href="{{ porject.href }}" target="_blank" class="btn btn-project"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </div>
+    <img
+      class="blob"
+      src="assets/blob.png"
+      alt="Blob"
+      style="filter: invert(0.2)"
+    />
+  </section>
 </section>
