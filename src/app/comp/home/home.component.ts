@@ -19,4 +19,11 @@ export class HomeComponent {
     // this.router.navigateByUrl('terminal');//, { skipLocationChange: true };
 
     }
+    
+    closeNav() {
+      document.getElementById("myNav").style.width = "0";
+    }
+    openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
 }

@@ -18,12 +18,14 @@ import { LSkillsComponent } from './linux/l-skills/l-skills.component';
     AppComponent,
     HomeComponent,
   ],
-  imports: [
-    FormsModule,
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [FormsModule, BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent, TerminalComponent, PromptComponent, LSkillsComponent, LProjectsComponent]
+  bootstrap: [
+    AppComponent,
+    TerminalComponent,
+    PromptComponent,
+    LSkillsComponent,
+    LProjectsComponent,
+  ],
 })
-export class AppModule { }
+export class AppModule {}
