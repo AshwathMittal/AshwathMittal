@@ -243,3 +243,12 @@
   background: rgb(43, 255, 136);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
 }
+
+.whole{
+  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
+}
+
+.child{
+  scroll-snap-align: start;
+}
