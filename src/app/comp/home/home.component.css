@@ -7,6 +7,7 @@
 .btn-terminal {
   float: right;
 }
+
 .btn-project {
   background-color: #1dbf73;
   font-size: 16px;
@@ -191,9 +192,36 @@
   transition: 0.3s;
 }
 
-.overlay a:hover,
-.overlay a:focus {
+/* .overlay a:hover
+{
   color: #0066ff;
+}  */
+
+.github svg:hover {
+  height: 128px;
+  width: 128px;
+  z-index: 1;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;   
+}  
+
+.github svg, .twitter svg, .mail svg {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;   
+}
+.twitter svg:hover {
+  height: 128px;
+  width: 128px;
+  z-index: 1;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  fill: rgb(29,155,240);
+}
+
+.mail svg:hover{
+  height: 128px;
+  width: 128px;
+  z-index: 1;
+  /* fill: #fff; */
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  fill: rgb(234,67,53);
 }
 
 .overlay .closebtn {

@@ -6,6 +6,7 @@ import { TerminalComponent } from './linux/terminal/terminal.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'terminal', component: TerminalComponent },
+  {path: '**', redirectTo: ''}
   
 ];
 
