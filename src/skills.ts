@@ -1,14 +1,10 @@
 export const skills = [
   {
     name: 'Web Development',
-    desc: `  I am a Frontend-Developer and I am well experienced with HTML, CSS, Javascript, TypeScript, Angular, NodeJS, Express, MongoDB.
-              Though I know a few Backend technologies I choose to be a Frontend-Developer.`,
-  },
+    desc: ' Laguages/Frameworks I use are:  HTML, CSS, Javascript, TypeScript, Angular, NodeJS, Express, MongoDB. I primarily develop Frontend Websites. '
+  }, 
   {
-    name: 'Python Programming',
-    desc: `
-              I am a python programmer with intermidiate experience in it.
-              Also I have a little bit knowledge of Machine Learning and Deep Learning.
-              `,
-  },
+    name: 'Machine Learning',
+    desc: 'I have intermediate experience in devoloping machine learning models using Python.'
+  }
 ];
