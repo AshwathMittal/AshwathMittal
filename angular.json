@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "weper:build:production"
+              "buildTarget": "weper:build:production"
             },
             "development": {
-              "browserTarget": "weper:build:development"
+              "buildTarget": "weper:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "weper:build"
+            "buildTarget": "weper:build"
           }
         },
         "test": {

@@ -42,13 +42,8 @@ export const projects = [
       //   href: "https://www.youtube.com/watch?v=hJsCuauUbAY"
       // },      
       {
-        title: "Also Check My GiHub For Other Projects",
+        title: "Explore Git Repos",
         desc: "",
         href: "https://github.com/AshwathMittal"
-      },
-
-      {
-        title: "More Projects To Be Uploaded Soon...",
-        desc: null,
       }
 ]

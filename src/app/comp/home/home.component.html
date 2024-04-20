@@ -1,6 +1,6 @@
 <div class="whole">
 <section class="home-page">
-  <div class="child">
+  <div class="c_1">
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" (click)="closeNav()"
       >&times;</a
@@ -21,11 +21,11 @@
           /></svg >
         
         </a>
-      <a target="_blank" class="twitter"href="https://twitter.com/AshwathMittal"
+      <!-- <a target="_blank" class="twitter"href="https://twitter.com/AshwathMittal"
         ><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
         </svg>
-        </a>
+        </a> -->
       <a target="_blank" class="mail" href="mailto:ashwathmittal@gmail.com">
         <svg          xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" >
           <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg></a>
@@ -33,18 +33,21 @@
   </div>
 
   <div class="float">
-    <div (click)="openNav()">
-      <button class="flLgkI" style="cursor: pointer">
+    
+      <button (click)="openNav()" class="flLgkI" style="cursor: pointer">
+        <div style="padding:15px;">
         <div class="icon-one false">
           <div class="hamburger hamburger-one"></div>
         </div>
+      </div>
       </button>
-    </div>
+
     <button
       (click)="OpenTerminal()"
       class="btn btn-terminal"
       style="filter: invert(1)" 
     >
+    
       <svg 
         xmlns="http://www.w3.org/2000/svg"
         width="32"
@@ -60,6 +63,7 @@
           d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"
         />
       </svg>
+
     </button>
   </div>
 
@@ -68,6 +72,7 @@
     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
   </svg></button>
 </div> -->
+<div style="width: 90%;">
   <div class="menu-left">
     <a class="btn" class="menu-list-item">Hello</a>
     <a class="btn" class="menu-list-item">I am</a>
@@ -76,23 +81,19 @@
     >
   </div>
   <div class="menu-right">
-    <p style="font-size: 45px; line-height: 5rem;" class="menu-list-item">About Me</p>
+    <p style="font-size: 45px; line-height: 7rem;" class="menu-list-item">About Me</p>
     <p class="why-are-you-here">
-      I am a 11th grade student with keen interest in Computer Science and
-      Robotics. In the year 2020 I started to teach myself to code,
-       I first started with Web-Development and then Python (You can check my github repositories). 
-       <br /><br/>
-      I am currenty a Front-end web developer with a little bit knowledge of
-      backend(In JavaScript).
+      Welcome to my corner of the web! I'm a first-year engineering student at Purdue University in West Lafayette, where my love for engineering, physics, and all things tech truly blossoms. 
+      I enjoy exploring everything from space mysteries to how gadgets work. I'm always excited to come up with new ideas or learn about the latest research. Whether I'm playing with new gadgets, thinking up new inventions, or diving into studies, I'm always eager to learn and create. Come join me as I use my passion to make a difference in engineering and beyond!
     </p>
   </div>
   </div>
-
+</div>
   <img class="blob" src="assets/blob.png" alt="" />
 <div class="child">
   <div class="section-2">
     <div class="container">
-      <h1 class="heading">Here's What I Can Do</h1>
+      <h1 class="heading">Skills Set</h1>
       <div class="know">
         <div class="card" *ngFor="let skill of skills">
           <h3>{{ skill.name }}</h3>
@@ -109,7 +110,7 @@
   <section class="home-page">
     <img class="blob2" src="assets/blob.png" alt="Blob" />
     <div class="container">
-      <h1 class="heading">Here are My Projects</h1>
+      <h1 class="heading">Projects</h1>
       <div class="know">
         <div class="card" *ngFor="let porject of projects">
           <h3>{{ porject.title }}</h3>
@@ -124,7 +125,7 @@
       class="blob"
       src="assets/blob.png"
       alt="Blob"
-      style="filter: invert(0.2)"
+      style="filter: invert(0.6)"
     />
   </section>
 </div>

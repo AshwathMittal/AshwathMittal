@@ -1,6 +1,6 @@
 <div class="comm">
     <div class="prompt">
-        <span class="user">notroot</span>@<span class="host">localhost</span>
+        <span class="user">notroot</span>&#64;<span class="host">localhost</span>
         <span class="prompt-symbol">$</span>
         <div class="input">
             <a class="input-text">{{cmd.name}}</a>
@@ -12,29 +12,23 @@
         <app-l-skills *ngIf="cmd.name == 'skills'"></app-l-skills>
         <div *ngIf="cmd.name == 'about'">
             <br>
-            I am a 11th grade student with keen interest in Computer Science and
-      Robotics. In the year 2020 I started to teach myself to code,
-       I first started with Web-Development and then Python (You can check my github repositories). 
-       <br />
-      I am currenty a Front-end web developer with a little bit knowledge of
-      backend(In JavaScript).
-            
-            
+            Welcome to my corner of the web! I'm a first-year engineering student at Purdue University in West Lafayette, where my love for engineering, physics, and all things tech truly blossoms. 
+            I enjoy exploring everything from space mysteries to how gadgets work. I'm always excited to come up with new ideas or learn about the latest research. Whether I'm playing with new gadgets, thinking up new inventions, or diving into studies, I'm always eager to learn and create. Come join me as I use my passion to make a difference in engineering and beyond!
             <br></div>
         <div *ngIf="cmd.name == 'contact'"><br>
-            <p><a href="mailto:ashwathmittal@gmail.com" class="btn" target="_blank" style="text-decoration: none;">Mail Me</a></p>
-            <h4>Also Follow Me On: <a href="https://github.com/AshwathMittal">GitHub</a></h4>
+            <p><a href="mailto:ashwathmittal@gmail.com" class="btn" target="_blank" style="text-decoration: none;">Mail</a></p>
+            <h4>GitHub Profile: <a href="https://github.com/AshwathMittal">GitHub</a></h4>
         </div>
         <div class="help" *ngIf="cmd.name == 'help'">
             <div class="container-fluid">
                 <ul>
                     <li>[0]: Display This help Menu => <b><u>help</u></b></li>
-                    <li>[1]: See My Skills =>  <b><u>skills</u></b></li>
-                    <li>[2]: See My Previous Projects =>  <b><u>projects</u></b></li>
-                    <li>[3]: About Me =>  <b><u>about</u></b></li>
-                    <li>[4]: Contact Info =>  <b><u>Contact</u></b></li>
-                    <li>[5]: Resest terminal =>  <b><u>clear</u></b></li>
-                    <li>[6]: Go Back To Normal View =>  <b><u>exit</u></b></li>
+                    <li>[1]: List My Skills Set =>  <b><u>skills</u></b></li>
+                    <li>[2]: List My Previous Projects =>  <b><u>projects</u></b></li>
+                    <li>[3]: Display About Me =>  <b><u>about</u></b></li>
+                    <li>[4]: Display Contact Info =>  <b><u>Contact</u></b></li>
+                    <li>[5]: Erase terminal =>  <b><u>clear</u></b></li>
+                    <li>[6]: Go Back =>  <b><u>exit</u></b></li>
                 </ul>
             </div>
         </div>

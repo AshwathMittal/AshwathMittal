@@ -67,7 +67,7 @@
 .menu-left {
   /* z-index: 1; */
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 10%;
   display: flex;
   flex-direction: column;
@@ -87,14 +87,16 @@
   color: #fff;
 }
 .menu-right {
-  float: right;
-  width: 45%;
+  float:right;
+  max-width: 45%;
   padding-right: 15px;
 }
 
 .why-are-you-here {
   font-weight: 500;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  
 }
 
 .section-2 {
@@ -102,6 +104,7 @@
   background: rgb(72, 49, 212);
   position: relative;
   margin-top: -5px;
+  width: 100%;
 }
 
 .container {
@@ -202,6 +205,7 @@
   width: 100%;
   text-align: center;
   margin-top: 30px;
+  
 }
 .overlay a {
   padding: 8px;
@@ -299,4 +303,11 @@
 
 .child{
   scroll-snap-align: start;
+  /* margin: 15px; */
+}
+
+.c_1{
+  scroll-snap-align: start;
+  margin: 20px;
+  margin-top: 0px;
 }

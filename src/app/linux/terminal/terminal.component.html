@@ -28,13 +28,13 @@
                 </div>
                 <!-- <app-l-skills *ngIf="s"></app-l-skills>
                 <app-l-projects *ngIf="p"></app-l-projects> -->
-            <div class="comm">
+         <div class="comm">
                 <div class="prompt">
-                    <span class="user">notroot</span>@<span class="host">localhost</span>
+                    <span class="user">notroot</span>&#64;<span class="host">localhost</span>
                     <span class="prompt-symbol">$</span>
                     <div class="input">
                         <form (ngSubmit)="name()">
-                        <input type="text" class="input-text" placeholder="Type a command and hit enter" [(ngModel)]="in" id = "in" name="in" >
+                       <input type="text" class="input-text" placeholder="Type a command and hit enter" [ngModel]="in" (ngModelChange)=" (in= $event)" id = "in" name="in" >
     <button type="submit" style="display: none;"></button>
                     
                     </form>
